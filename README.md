@@ -21,4 +21,4 @@ vagrantfile 설정
 setup.sh
 ssh_setup.sh 설정
 
-vagrant up - jdk,git,hadoop,maven 등 설치
+vagrant up - jdk,git,hadoop,maven 등 설치로 시간이 소요됩니다.
