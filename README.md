@@ -11,6 +11,7 @@ C:\tfidf\vagrant>vagrant box add ubuntu/trusty64
 Name: ubuntu/trusty64
 Provider: virtualbox
 Version: 14.04
+
 ====================
 
 ### vagrantfile,setup.sh, ssh_setup.sh 설정 (folder내 존재)
