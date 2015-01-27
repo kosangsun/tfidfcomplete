@@ -236,24 +236,33 @@ vagrant,vagrant로 통일
 hadoop namenode -format 
 확인란에서 Y
 
-hadoop@master:/home/hadoop/tools/hadoop/bin$ ./start-all.sh 이후에 제대로 생성되었는지 확인하기위해
+```
+hadoop@master:/home/hadoop/tools/hadoop/bin$ ./start-all.sh 
+```
+이후에 제대로 생성되었는지 확인하기위해
 master와 slave에 jps명령어를 입력해줍니다.
 
 [마스터]
+```
 hadoop@master:/home/hadoop$ jps
+```
 15625 Jps
 15482 JobTracker
 15410 SecondaryNameNode
 15228 NameNode
 
 [slave1]
+```
 hadoop@slave1:~$ jps
+```
 15256 TaskTracker
 15351 Jps
 15144 DataNode
 
 [slave2]
+```
 hadoop@slave2:~$ jps
+```
 15254 Jps
 15047 DataNode
 15160 TaskTracker
@@ -274,10 +283,14 @@ data안에 있는 shakespeare.tar.gz의 압축을 풀고
 tar xvf shakespeare.tar.gz
 
 hdfs에 넣어줍니다.
+```
 hadoop dfs -put shakespeare shakespeare
+```
 
 확인
+```
 hadoop@master:/home/hadoop/tfidf/tfidfcomplete/data$ hadoop dfs -ls
+```
 Found 1 items
 drwxr-xr-x   - hadoop supergroup          0 2015-01-27 02:53 /user/hadoop/shakespeare
 
@@ -285,7 +298,9 @@ drwxr-xr-x   - hadoop supergroup          0 2015-01-27 02:53 /user/hadoop/shakes
 pom.xml,src가 있는 위치(tfidfcomplete/tfidf)에서 mvn package를 해줍니다.
 
 jar파일이 생긴것을 알수있습니다.
+```
 hadoop@master:/home/hadoop/tfidf/tfidfcomplete/tfidf/target$ ls
+```
 archive-tmp        maven-status
 classes            tfidf-0.0.1-SNAPSHOT.jar
 generated-sources  tfidf-0.0.1-SNAPSHOT-jar-with-dependencies.jar
