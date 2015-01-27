@@ -15,8 +15,15 @@ import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 import org.apache.hadoop.util.Tool;
+import org.apache.hadoop.util.ToolRunner;
 
 public class Tfidf extends Configured implements Tool{
+	public static void main(String[] args) throws Exception {
+		int res = ToolRunner.run(new Configuration(), new Tfidf(),
+				args);
+		System.exit(res);
+	}
+
 
 	public int run(String[] args) throws Exception {
 		// TODO Auto-generated method stub
