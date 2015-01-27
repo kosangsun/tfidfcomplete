@@ -3,16 +3,16 @@
 
 vagrant init
 
-C:\tfidf>md tfidf
-C:\tfidf>cd tfidf
+C:\tfidf>md vagrant
+C:\tfidf>cd vagrant
 
-C:\tfidf\tfidf>vagrant init
+C:\tfidf\vagrant>vagrant init
 
-C:\tfidf\tfidf>vagrant box add ubuntu/trusty64
+C:\tfidf\vagrant>vagrant box add ubuntu/trusty64
 Name: ubuntu/trusty64
 Provider: virtualbox
 Version: 14.04
 
-C:\tfidf\tfidf>vagrant box list
+C:\tfidf\vagrant>vagrant box list
 ubuntu/trusty64 (virtualbox, 14.04)
 
