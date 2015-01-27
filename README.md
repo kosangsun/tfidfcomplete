@@ -16,3 +16,9 @@ Version: 14.04
 C:\tfidf\vagrant>vagrant box list
 ubuntu/trusty64 (virtualbox, 14.04)
 
+
+vagrantfile 설정
+setup.sh
+ssh_setup.sh 설정
+
+vagrant up - jdk,git,hadoop,maven 등 설치
